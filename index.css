@@ -71,9 +71,9 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-    background-color: #f44336;
+    background-color: #ffffff;
     padding: 30px 40px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -112,4 +112,8 @@ input {
 /* Style buttons in hover state */
 .addBtn:hover {
     background-color: #bbb;
+}
+
+#myInput {
+    border: 1px solid black;
 }
