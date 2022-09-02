@@ -1,16 +1,20 @@
+// Javascript logic to enable CRUD logic in the Todo app.
 
-// Create a "close" button and append it to each list item
+// Iterate through all the list tems and append a 
+// "close" button.
 var myNodelist = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
     var span = document.createElement("span");
-    var txt = document.createTextNode("\u00D7");
+    // var txt = document.createTextNode("\u00D7");
+    var txt = document.createTextNode("\u2713");
     span.className = "close";
     span.appendChild(txt);
     myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// When a close button is clicked, hide the 
+// current list item.
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -20,7 +24,7 @@ for (i = 0; i < close.length; i++) {
     }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// When the list item is clicked, add a "checked" symbol.
 var list = document.querySelector('ul');
 list.addEventListener('click', function (ev) {
     if (ev.target.tagName === 'li') {
@@ -28,7 +32,8 @@ list.addEventListener('click', function (ev) {
     }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// When "add" button clicked, append a new list item
+// to the existing list, even if empty.
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
@@ -41,8 +46,8 @@ function newElement() {
     }
     document.getElementById("myInput").value = "";
 
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    var span = document.createElement("span");
+    var txt = document.createTextNode("\u2713");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);

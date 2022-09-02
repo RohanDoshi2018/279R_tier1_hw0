@@ -1,5 +1,12 @@
 # Get Started
-Download the directory and click on index.html to open in your web browser.
+
+1. Download this github directory to your local machine.
+
+2. Click on index.html to open and open in your web browser.
 
 # Citation for Source Code
-Code adapted from https://www.w3schools.com/howto/howto_js_todolist.asp
+
+All code adapted from this tutorial: https://www.w3schools.com/howto/howto_js_todolist.asp
+
+I added minor styling and logic modifications to the original code base, along
+with additional comments. All credit belongs to the original authors. 
