@@ -109,6 +109,7 @@ input {
     border-radius: 0;
 }
 
+/* Style buttons in hover state */
 .addBtn:hover {
     background-color: #bbb;
 }
